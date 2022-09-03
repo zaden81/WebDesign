@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+img{
+    width: 100%;
+}
+.clear{
+    width: 100%;
+    clear: both;
+}
+body{
+    font-family: 'mother_natureregular',sans-serif;
+}
+h2{font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'mother_natureregular', sans-serif;
+    line-height: 1.8em ;}
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.left{
+    width: 53%;
+    float: left;
+    margin-right: 7%;
+    position: relative;
+    z-index: 100;
+color: #fff;}
+.left2{    width: 54%;
+    padding: 180px 0px 160px 0px;
+    float: left;
+    margin-right: 7%;
+    position: relative;
+    z-index: 100;
+    color: #ffffff;}
+.right{
+    width: 40%;
+    float: right;
+    text-align: left;
+    padding-top: 50px;
+}
+
+div{
+    display: block;
+}
+a:visited {
+    color: #696671;;
+    text-decoration: none;
+}
+/* ---------------menu------------- */
+.menu{
+    z-index: 999999999;
+    padding: 20px 21px 20px 21px;
+    border-radius: 50px;
+    background-color: #f3a6ad;
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    width: 64px;
+    height: 64px;
+}
+.menuShow{}
+/*--------------- header------------ */
+#header{
+    width: 100%;
+    margin: 0px auto;
+    z-index: 100;
+    position: relative;
+    text-align: center;
+    background-color: #f0ced9;
+}
+#header img{
+    width: 100%;
+    height: auto;
+}
+.hour , .min{
+    position: absolute;
+    width: 9.6%;
+    top: 13.65%;
+    left: 16.76%;
+}
+.hour{
+    z-index: 101;
+}
+.min{
+    z-index: 102;
+}
+.clock1{
+    animation-name: clock1;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}
+.clock2{
+    animation-name: clock2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes clock1{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes clock2{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#photo{
+    position: absolute;
+    width: 18%;
+    top: 36.86%;
+    left: 25.7%;
+    z-index: 103;
+}
+.photo1{
+    animation-name: photo1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes photo1{
+    0%   { transform: translate()}
+    35% { transform: translate(1px,10%)}
+    65% { transform: translate(1px,-5%)}
+    100% { transform: translate()}
+}
+#text{
+    position: absolute;
+    width: 16.4%;
+    top: 50.3%;
+    left: 47.12%;
+    z-index: 104;
+}
+.text1{
+    animation-name: text1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes text1{
+    0%   { transform: skew();}
+    35% { transform: skew(5deg, 5deg);}
+    65% { transform: skew(10deg,5deg);}
+    100% { transform: skew();}
+}
+#tree1{
+    position: absolute;
+    width: 9.02%;
+    top: 54.34%;
+    left: 14.66%;
+    z-index: 105;
+}
+#tree2{
+    position: absolute;
+    width: 10.63%;
+    top: 50.3%;
+    left: 71.26%;
+    z-index: 107;
+}
+#tree3{
+    position: absolute;
+    width: 11.48%;
+    top: 40.1%;
+    left: 77.78%;
+    z-index: 106;
+}
+.tree{
+    animation-name: tree;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes tree {
+    0%  {transform: scale(1);}
+    20% {transform: scale(1);}
+    35% {transform: scale(1.25);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+.tree4{
+    animation-name: tree4;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes tree4 {
+    0%  {transform: scale(1);}
+    20% {transform: scale(1.1);}
+    35% {transform: scale(1.25);}
+    50% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+.tree5{
+    animation-name: tree5;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes tree5 {
+    0%  {transform: scale(1);}
+    20% {transform: scale(1.);}
+    35% {transform: scale(1.2);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+#cirle1{
+    position: absolute;
+    width: 2.16%;
+    top: 22.17%;
+    left: 63.8%;
+    z-index: 108;
+}
+#cirle2{
+    position: absolute;
+    width: 2.32%;
+    top: 22.17%;
+    left: 65.44%;
+    z-index: 109;
+}
+#cirle3{
+    position: absolute;
+    width: 2.88%;
+    top: 22.1%;
+    left: 67.24%;
+    z-index: 110;
+}
+.pop{
+    animation-name: pop;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes pop{
+    0%   {transform: scale(1);}
+    18% {transform: scale(1);}
+    25% {transform: scale(1.25);}
+    32% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+.pop2{
+    animation-name: pop2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes pop2{
+    0%   {transform: scale(1);}
+    28% {transform: scale(1);}
+    35% {transform: scale(1.25);}
+    42% {transform: scale(1);}
+    100% {transform: scale(1);}
+}.pop3{ 
+    animation-name: pop3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes pop3{
+    0%   {transform: scale(1);}
+    38% {transform: scale(1);}
+    45% {transform: scale(1.25);}
+    52% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+/*---------------content1---------------*/
+#content1{
+    background: #f0ced9;
+}   
+.main-content1{
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+    padding-bottom: 280px;
+   overflow: hidden
+   ;
+
+}
+.left img{width: 100%;}
+.theBody{    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
+    width: 100%;}
+.theHead{
+    position: absolute;
+    top: 0px;
+    left: 21.27%;
+    z-index: 102;
+    width: 59.6%;
+}
+.theHead2{
+    animation-name: Head;
+    animation-duration: 3.5s;
+    transform-origin: 50% 90%;
+    animation-iteration-count: infinite;
+}
+@keyframes Head {
+    0% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+.circle1{width: 64px;
+    height: 64px;
+    margin: 0px 13px 0px 0px;
+    border-radius: 30px;
+    float: left;
+    transition-duration: 0.25s;}
+.twitter{
+    
+    background-color: #93D8C5;
+}
+.pinterest{
+    background-color: #f3a6ad;
+}
+.instagram{
+    background-color: #98B8F1;
+    
+}
+
+.circle1:hover{
+    margin-top: -10px;
+}
+/*-----------------content2----------------*/
+#content2{
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    background-image: url(img/purple.png);
+    background-size: 50px 2000px;
+    background-position: center -95px;
+    margin-top: -180px;
+    background-repeat: repeat-x;
+    
+}
+#content2 a{color: #fff;}
+a:hover{color: #000;}
+.pulse{animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;}
+@keyframes pulse {
+    
+0% {
+    transform: scale(0.75);
+}
+50% {
+    transform: scale(1);
+}
+100% {
+    transform: scale(0.75);
+}
+}
+ .mobile > .left img {
+    width: 55px;
+    margin-bottom: -10px;
+}
+.theMid{
+    overflow: hidden;
+    width: 100%;
+    background-image: url(img/middle.png);
+    background-size: 100% 180px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.main-content2{
+    width: 90%;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.mobile{
+    display: block;
+    overflow: hidden;
+    background-image: url(img/mobile.png);
+    background-position: calc(100% + -50px) top;
+    background-repeat: no-repeat;}
+    
+
+/* -----------------list1---------------- */
+#list1{
+    background-color:#ffffff; 
+    width:100%;
+}
+.list1-page{
+    width: 94%;
+    max-width: 1700px;
+    margin: 0px auto;
+    padding: 130px 0px 110px 0px;
+}
+.list1-item{
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    font-size: 19px;
+    line-height: 23px;
+    padding: 20px 36px 20px 36px;
+}
+.list1-item > img {
+    margin-bottom: 12px;
+    transition-duration: 0.25s;
+}
+
+.list1-item > img:hover{
+    transform: scale(1.08) rotate(-6deg);
+}
+h3{
+    font-size: 1.2em;
+    line-height: 29px;
+    color: #6a4b63;
+    font-weight: lighter;
+    margin-bottom: 2px;}
+h4{
+    font-size: 1.0em;
+    line-height: 29px;
+    color: #8e7a8a;
+    font-weight: lighter;
+}
+/* -----------------list2------------------ */
+#list2{
+    background-color: #EEEEF0;
+    width: 100%;
+}
+.list2-page{
+    width: 100%;
+    padding: 0px 0px 270px 0px;
+    background: -webkit-radial-gradient(bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 70%);
+}
+.shop{    
+    width: 100%;
+    padding-top: 100px;
+    height: 375px;
+    background-image: url(img/store_cover.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;}
+.shopShow{
+    animation-name: shop;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+.shopShow > img { width: 25%;}
+@keyframes shop {
+    0% {
+        transform: translateY(0%) scaleY(1);
+    }
+    40% {
+        transform: translateY(0%) scaleY(1.08);
+    }
+    55% {
+        transform: translateY(0%) scaleY(0.7) scaleX(1.15);
+    }
+    70% {
+        transform: translateY(0%) scaleY(1.05) scaleX(1);
+    }
+    85% {
+        transform: translateY(0%) scaleY(0.6) scaleX(1);
+    }
+    100% {
+        transform: translateY(0%) scaleY(1) scaleX(1);
+    }
+}
+.list2-item{
+    width: 90%;
+    margin: -12px auto 0px auto;
+    position: relative;
+    overflow: hidden;
+
+}
+.list2-item > img {
+    width: 25%;
+    float: left;
+    padding: 8px;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+
+}
+.list2-item > img:hover {
+    transform: scale(0.8);
+}
+.seeAll {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 32px;
+    text-underline-offset: 7px;
+}
+.seeAll a , #footer a{
+    color: #696671;
+    text-decoration-color: #696671;
+}
+.seeAll a:hover , #footer a:hover{
+    color: #f3a6ad;
+    text-decoration-color: #f3a6ad;
+}
+/* ------------------footer----------------- */
+.theMid2{
+    width: 100%;
+    background-image: url(img/swish_pink.png);
+    background-size: 100% 180px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 180px;
+    margin-top: -180px;
+}
+#footer{
+    background: #F0CED9 url(img/footer_bkg.jpg);
+    background-position: center top;
+    background-size: 1355px 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.footerPage{
+    overflow: hidden;
+    padding: 170px 0px 290px 0px;
+    position: relative;
+    background: -webkit-radial-gradient(bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%);
+}
+.footerMail{
+    width: 90%;
+    margin: 0px auto 0px auto;
+    font-size: 29px;
+    line-height: 36px;
+}
+.footerLeft{
+    width: 38%;
+    float: left;
+    text-align: center;
+}
+.footerLink{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 0px;
+}
+input{    
+    padding: 15px 5% 15px 5%;
+    font-size: 19px;
+    border: 0px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;}
+input[type=submit] {
+    width: 220px;
+    background-color: #98B8F1;
+    color: #FFFFFF;
+    padding: 16px 0px 16px 0px;
+    font-family: 'mother_natureregular', sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    letter-spacing: 1px;}
+    input[type=submit]:hover{
+    background-color:#f3a6ad ;
+    }
+#footer a {margin: 12px;
+text-decoration: none;}
