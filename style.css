@@ -9,16 +9,15 @@ html{
     outline: 0;
     font-size: 100%;
 }
-img{
-    width: 100%;
-}
+img{width: 100%;}
+body{font-family: sans-serif;}
+div{display: block;}
+
 .clear{
     width: 100%;
     clear: both;
 }
-body{
-    font-family: 'mother_natureregular',sans-serif;
-}
+
 h2{font-size: 28px;
     line-height: 32px;
     margin-bottom: 10px;}
@@ -30,7 +29,7 @@ h1{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    font-family: 'mother_natureregular', sans-serif;
+    font-family: sans-serif;
     line-height: 1.8em ;}
 p {
     font-size: 1.2em;
@@ -57,9 +56,7 @@ color: #fff;}
     padding-top: 50px;
 }
 
-div{
-    display: block;
-}
+
 a:visited {
     color: #696671;;
     text-decoration: none;
@@ -72,14 +69,14 @@ a:visited {
     position: fixed;
     top: 18px;
     right: 18px;
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-.insideMenu {
+.insideMenu , .insideMenu::before , .insideMenu::after {
     position: absolute;
     width: 40px;
     height: 6px;
@@ -90,21 +87,14 @@ a:visited {
     cursor: pointer;
 }
 .insideMenu::before , .insideMenu::after {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-    z-index: 999999;
-}
+    content: "";}
+
 .insideMenu::before{
-    transform: translateY(-12px);
-}
+    transform: translateY(-12px);}
+
 .insideMenu::after{
-    transform: translateY(12px);
-}
+    transform: translateY(12px);}
+    
 .menuShow .insideMenu {
     transform: translateX(-50px);
     background: transparent;
@@ -180,29 +170,17 @@ a:visited {
 .clock1{
     animation-name: clock1;
     animation-duration: 4.5s;
-    animation-iteration-count: infinite;
-}
-.clock2{
+    animation-iteration-count: infinite;}
+@keyframes clock1{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}}
+.clock2 {
     animation-name: clock2;
     animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-}
-@keyframes clock1{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+    animation-iteration-count: infinite;}
 @keyframes clock2{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}}
 #photo{
     position: absolute;
     width: 18%;
@@ -396,27 +374,21 @@ a:visited {
         transform: rotate(-3deg);
     }
 }
-.circle1{width: 64px;
+.circle1{
+    width: 64px;
     height: 64px;
     margin: 0px 13px 0px 0px;
     border-radius: 30px;
     float: left;
     transition-duration: 0.25s;}
-.twitter{
-    
-    background-color: #93D8C5;
-}
-.pinterest{
-    background-color: #f3a6ad;
-}
-.instagram{
-    background-color: #98B8F1;
-    
-}
 
-.circle1:hover{
-    margin-top: -10px;
-}
+.circle1:hover{margin-top: -10px;}
+
+.twitter{background-color: #93D8C5;}
+.pinterest{background-color: #f3a6ad;}
+.instagram{background-color: #98B8F1;}
+
+
 /*-----------------content2----------------*/
 #content2{
     overflow: hidden;
@@ -496,12 +468,11 @@ a:visited {
 }
 .list1-item > img {
     margin-bottom: 12px;
-    transition-duration: 0.25s;
-}
+    transition-duration: 0.25s;}
 
 .list1-item > img:hover{
-    transform: scale(1.08) rotate(-6deg);
-}
+    transform: scale(1.08) rotate(-6deg);}
+
 h3{
     font-size: 1.2em;
     line-height: 29px;
@@ -523,7 +494,7 @@ h4{
     width: 100%;
     padding: 0px 0px 270px 0px;
     background: -webkit-radial-gradient(bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 70%);
-}
+}.shopShow > img { width: 25%;}
 .shop{    
     width: 100%;
     padding-top: 100px;
@@ -535,9 +506,8 @@ h4{
 .shopShow{
     animation-name: shop;
     animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-}
-.shopShow > img { width: 25%;}
+    animation-iteration-count: infinite;}
+
 @keyframes shop {
     0% {
         transform: translateY(0%) scaleY(1);
@@ -640,13 +610,13 @@ input{
     width: 90%;
     border-radius: 5px;
     background-color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;}
+    font-family:  sans-serif;}
 input[type=submit] {
     width: 220px;
     background-color: #98B8F1;
     color: #FFFFFF;
     padding: 16px 0px 16px 0px;
-    font-family: 'mother_natureregular', sans-serif;
+    font-family:  sans-serif;
     font-size: 21px;
     text-transform: uppercase;
     margin-top: 15px;
@@ -656,5 +626,4 @@ input[type=submit] {
     }
 #footer a {margin: 12px;
 text-decoration: none;}
-
 a:hover{color: #6a4b63;}
